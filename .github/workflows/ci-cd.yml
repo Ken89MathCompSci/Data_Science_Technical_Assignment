@@ -64,7 +64,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker buildx build --platform linux/amd64 -t my-inference-image:latest .
+          docker buildx build --platform linux/amd64 -t my-inference-image:latest --push .
 
       - name: Log in to Docker Hub
         env:
