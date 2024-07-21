@@ -10,9 +10,6 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make /app/data directory if it doesn't exist
-RUN mkdir -p /app/data
-
 # Ensure the script is executable
 RUN chmod +x your_inference_script.py
 
