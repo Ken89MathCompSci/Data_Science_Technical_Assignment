@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint with pylint
         run: |
-          pylint your_script.py --fail-under=6.0
+          pylint inference_script.py --fail-under=6.0
 
   test:
     runs-on: ubuntu-latest
