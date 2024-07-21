@@ -26,6 +26,9 @@ jobs:
           pip install pylint
 
       - name: Lint with pylint
+        env:
+          pythonLocation: /opt/hostedtoolcache/Python/3.8.18/x64
+          LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.8.18/x64/lib
         run: |
           pylint inference_script.py --fail-under=6.0
 
