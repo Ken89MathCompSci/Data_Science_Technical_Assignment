@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Ensure the script is executable
-RUN chmod +x your_inference_script.py
+RUN chmod +x inference_script.py
 
 # Set the entrypoint to run the inference script
 ENTRYPOINT ["python", "./inference_script.py"]
